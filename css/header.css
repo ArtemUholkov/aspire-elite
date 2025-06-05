@@ -122,6 +122,13 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: all 0.3s ease;
+}
+.main_button:hover {
+  background: var(--Gold, #d3a221);
+  border: 2.583px solid var(--Gold, #0a0a0a);
+  color: var(--Dark, #0a0a0a);
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 1620px) {

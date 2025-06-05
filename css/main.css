@@ -1,0 +1,99 @@
+.phone-frame-container {
+  position: relative;
+  width: 346.612px;
+  height: 720px;
+  /* margin: 40px auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-video {
+  position: absolute;
+  top: 13.389px; /* (720 - 693.223) / 2 for vertical centering */
+  left: 13.389px; /* (346.612 - 319.835) / 2 for horizontal centering */
+  width: 319.835px;
+  height: 693.223px;
+  object-fit: cover;
+  border-radius: 40.909px;
+  z-index: 1;
+}
+
+.phone-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 346.612px;
+  height: 720px;
+  border-radius: 54.298px;
+  border: 0.744px solid rgba(0, 0, 0, 0.15);
+  background: var(--Charcoal-gray, #111);
+  box-shadow: 0px 74.38px 59.504px 0px rgba(0, 0, 0, 0.03),
+    0px 27.15px 21.72px 0px rgba(0, 0, 0, 0.02), 0px 13.181px 10.545px 0px rgba(0, 0, 0, 0.02),
+    0px 6.461px 5.169px 0px rgba(0, 0, 0, 0.01), 0px 2.555px 2.044px 0px rgba(0, 0, 0, 0.01);
+  pointer-events: none;
+}
+.main-content_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 185px;
+}
+.main-texts_wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 944px;
+}
+.main-title {
+  color: #fff;
+
+  /* Heading desktop */
+  font-family: Montserrat;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 62.4px */
+  text-transform: uppercase;
+}
+.main_title_highlight {
+  color: var(--Gold, #d3a221);
+  /* H1 */
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 76.8px */
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+.main_prducts_text {
+  color: var(--Light, #fefefe);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  max-width: 355px;
+  margin-bottom: 42px;
+}
+.main_main_button {
+  padding: 20px 20px;
+  border-radius: 90px;
+  border: 2.583px solid var(--Gold, #d3a221);
+  background: var(--Dark, #0a0a0a);
+  max-width: 375px;
+  text-align: center;
+  color: var(--Light, #fefefe);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.3s ease;
+}
+.main_main_button:hover {
+  background: var(--Gold, #d3a221);
+  border: 2.583px solid var(--Gold, #0a0a0a);
+  color: var(--Dark, #0a0a0a);
+  transition: all 0.3s ease;
+}
