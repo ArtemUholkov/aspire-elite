@@ -1,3 +1,42 @@
+.main {
+  position: relative;
+}
+
+.gradient5 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(211, 162, 33, 0.5) 20%, rgba(211, 162, 33, 0.5) 70%);
+  filter: blur(200px) brightness(1.1); /* Increased blur and brightness */
+  transform: translate(-95%, -50%);
+  z-index: 0;
+  animation: glow5 6s infinite alternate;
+}
+@keyframes glow5 {
+  0% {
+    opacity: 0.8; /* Increased opacity */
+    transform: translate(-60%, -50%) scale(1);
+  }
+  25% {
+    opacity: 1; /* Peak brightness */
+    transform: translate(calc(-60% + 100px), calc(-50% + 50px)) scale(1.05);
+  }
+  50% {
+    opacity: 1; /* Peak brightness */
+    transform: translate(calc(-60% - 100px), calc(-50% + 100px)) scale(1.1);
+  }
+  75% {
+    opacity: 0.9; /* Slight fade */
+    transform: translate(calc(-60% - 50px), calc(-50% - 100px)) scale(1.05);
+  }
+  100% {
+    opacity: 0.8; /* Return to initial glow */
+    transform: translate(calc(-60% + 100px), calc(-50% - 50px)) scale(1.1);
+  }
+}
+
 .phone-frame-container {
   position: relative;
   width: 346.612px;
