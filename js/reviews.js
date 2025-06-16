@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
       el: '.swiper-pagination',
       clickable: true,
     },
-    preventClicks: false,
-    preventClicksPropagation: false,
     breakpoints: {
       768: {
         slidesPerView: 2,
