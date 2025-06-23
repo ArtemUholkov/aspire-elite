@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="images/global/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   </head>
   <body>
     <header class="header">
@@ -71,21 +73,29 @@
     <main class="main">
       <div class="gradient5"></div>
       <div class="container">
-        <div class="main-content_wrapper">
+        <div class="main-content_wrapper" data-aos="fade-up">
           <div class="main-texts_wrapper">
             <div class="titles_wrapper">
-              <h1 class="main-title">
+              <h1 class="main-title" data-aos="fade-up">
                 1 on 1 Physician<br />Designed, Customized<br />Treatments to Optimize Your Health,
                 Fitness and Longevity
               </h1>
-              <p class="main_title_highlight">Starts Here</p>
+              <p class="main_title_highlight" data-aos="fade-up" data-aos-delay="100">
+                Starts Here
+              </p>
             </div>
-            <p class="main_prducts_text">
+            <p class="main_prducts_text" data-aos="fade-up" data-aos-delay="200">
               Testosterone, Tesamorelin, GLPs, NAD+, BPC157, TB500 and much more.
             </p>
-            <a href="#contact" class="main_main_button main_sec_button">Start My Health Journey</a>
+            <a
+              href="#contact"
+              class="main_main_button main_sec_button"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              >Start My Health Journey</a
+            >
           </div>
-          <div class="phone-frame-container">
+          <div class="phone-frame-container" data-aos="zoom-in" data-aos-delay="400">
             <video
               class="phone-video"
               src="images/main/mainvideo.mp4"
@@ -103,15 +113,15 @@
     <section class="banner" id="about-us">
       <div class="container">
         <div class="banner_wrapper">
-          <h2 class="section_title">OUR MISSION</h2>
-          <p class="section_text banner-text">
+          <h2 class="section_title" data-aos="fade-right">OUR MISSION</h2>
+          <p class="section_text banner-text" data-aos="fade-right">
             At Aspire Elite Wellness Clinic, we are committed to helping you look, feel, and perform
             your best through customized, state-of-the-art medical protocols developed specifically
             for you by Dr. Chris Van Smith who will monitor you every step of the way. Whether
             you're seeking to enhance your vitality, maximize longevity, manage weight, or optimize
             hormonal balance, we offer cutting-edge solutions tailored to your needs.
           </p>
-          <div class="patient-limit_wrapper">
+          <div class="patient-limit_wrapper" data-aos="fade-left">
             <p class="amount">250</p>
             <div class="limit_text_wrapper">
               <p class="limit_text">Patient Limit</p>
@@ -130,7 +140,7 @@
             care and support.
           </p>
           <div class="process_items_wrapper">
-            <div class="process_item">
+            <div class="process_item" data-aos="fade-up" data-aos-delay="0">
               <img src="images/process/1.svg" alt="Physician Consultation" class="item_number" />
               <p class="item_title">Physician Consultation</p>
               <p class="item_text">
@@ -139,7 +149,7 @@
                 tests are appropriate.
               </p>
             </div>
-            <div class="process_item">
+            <div class="process_item" data-aos="fade-up" data-aos-delay="100">
               <img src="images/process/2.svg" alt="Physician Consultation" class="item_number" />
               <p class="item_title">Specified Labs & Testing</p>
               <p class="item_text">
@@ -147,7 +157,7 @@
                 patient. Additional testing such as VO2 max.
               </p>
             </div>
-            <div class="process_item">
+            <div class="process_item" data-aos="fade-up" data-aos-delay="200">
               <img src="images/process/3.svg" alt="Physician Consultation" class="item_number" />
               <p class="item_title">Custom Protocols</p>
               <p class="item_text">
@@ -155,7 +165,7 @@
                 whether it's hormone optimization, weight management, or overall wellness.
               </p>
             </div>
-            <div class="process_item">
+            <div class="process_item" data-aos="fade-up" data-aos-delay="300">
               <img src="images/process/4.svg" alt="Physician Consultation" class="item_number" />
               <p class="item_title">Ongoing Monitoring</p>
               <p class="item_text">
@@ -173,8 +183,13 @@
     <section class="founder">
       <div class="container">
         <div class="founder_wrapper">
-          <img src="images/founder/2chris.webp" alt="Chris Van Smith" class="founder_photo" />
-          <div class="founder_info">
+          <img
+            src="images/founder/2chris.webp"
+            alt="Chris Van Smith"
+            class="founder_photo"
+            data-aos="fade-right"
+          />
+          <div class="founder_info" data-aos="fade-left">
             <h2 class="section_title">Meet Founder here</h2>
             <img
               src="images/founder/2chris.webp"
@@ -201,7 +216,7 @@
         <div class="treatments_wrapper">
           <h2 class="section_title">Our Treatments</h2>
           <div class="tretments_items_wrapper">
-            <div class="tretments_item left-item">
+            <div class="tretments_item left-item" data-aos="fade-up">
               <div class="left_item_wrapper">
                 <p class="treatment_item_title">Hormone Replacement Therapy (HRT)</p>
                 <p class="treatment_item_text">Testosterone, Estrogen, Progesterone</p>
@@ -210,7 +225,7 @@
                 <img src="images/treatments/1.svg" alt="Hormone" class="treatment_img" />
               </div>
             </div>
-            <div class="tretments_item right-item">
+            <div class="tretments_item right-item" data-aos="fade-up">
               <div class="left_right_wrapper">
                 <p class="treatment_item_title">Weight Loss Peptides</p>
                 <p class="treatment_item_text">Retatrutide, Tirzepatide, Semaglutide</p>
@@ -219,7 +234,7 @@
                 <img src="images/treatments/2.svg" alt="Hormone" class="treatment_img" />
               </div>
             </div>
-            <div class="tretments_item left-item">
+            <div class="tretments_item left-item" data-aos="fade-up">
               <div class="left_item_wrapper">
                 <p class="treatment_item_title">Growth Hormone Peptides</p>
                 <p class="treatment_item_text">Tesamorelin, Sermorelin,<br />CJC-1295/Ipamorelin</p>
@@ -228,7 +243,7 @@
                 <img src="images/treatments/3.svg" alt="Hormone" class="treatment_img" />
               </div>
             </div>
-            <div class="tretments_item right-item">
+            <div class="tretments_item right-item" data-aos="fade-up">
               <div class="left_right_wrapper">
                 <p class="treatment_item_title">Healing Peptides</p>
                 <p class="treatment_item_text">BPC 157, TB500, GHK-CU</p>
@@ -237,7 +252,7 @@
                 <img src="images/treatments/4.svg" alt="Hormone" class="treatment_img" />
               </div>
             </div>
-            <div class="tretments_item left-item">
+            <div class="tretments_item left-item" data-aos="fade-up">
               <div class="left_item_wrapper">
                 <p class="treatment_item_title">Anti-Aging & Longevity</p>
               </div>
@@ -245,7 +260,7 @@
                 <img src="images/treatments/5.svg" alt="Hormone" class="treatment_img" />
               </div>
             </div>
-            <div class="tretments_item right-item">
+            <div class="tretments_item right-item" data-aos="fade-up">
               <div class="left_right_wrapper">
                 <p class="treatment_item_title">ED, Skin & Hair</p>
               </div>
@@ -266,7 +281,7 @@
       <div class="container">
         <div class="price_items_wrapper">
           <div class="prices_wrapper">
-            <div class="prices_item">
+            <div class="prices_item" data-aos="fade-right" data-aos-delay="0">
               <p class="prices_title">Aspire Elite VIP</p>
               <div class="price">
                 <p class="prices_price">$999</p>
@@ -344,7 +359,7 @@
                 </p>
               </div>
             </div>
-            <div class="prices_item">
+            <div class="prices_item" data-aos="fade-left" data-aos-delay="0">
               <p class="prices_title">Aspire Elite Concierge</p>
               <div class="price">
                 <p class="prices_price">$399</p>
@@ -415,14 +430,16 @@
 
     <section class="whochoose" id="benefits">
       <div class="container">
-        <h2 class="section_title section_title_whochoose">Why Choose Aspire Elite?</h2>
-        <p class="section_subtitle">Our Unique Approach to Wellness</p>
-        <p class="section_text section_text_whochoose">
+        <h2 class="section_title section_title_whochoose" data-aos="fade-up">
+          Why Choose Aspire Elite?
+        </h2>
+        <p class="section_subtitle" data-aos="fade-up">Our Unique Approach to Wellness</p>
+        <p class="section_text section_text_whochoose" data-aos="fade-up">
           At Aspire Elite Wellness Clinic, we prioritize your well-being with a holistic and
           personalized approach to wellness. Here's how we provide exceptional care and set
           ourselves apart:
         </p>
-        <div class="whochoose_items_wrapper">
+        <div class="whochoose_items_wrapper" data-aos="fade-up">
           <div class="whochoose_item">
             <img src="images/whychoose/1.svg" alt="Who Choose Us" class="whochoose_img" />
             <p class="whochoose_title">Physician-Only Consultations</p>
@@ -481,8 +498,8 @@
     <section class="faq" id="faq">
       <div class="gradient5 gradient7"></div>
       <div class="container">
-        <p class="faq_title" data-aos="fade-down">FAQs</p>
-        <img src="images/faq/Group.png" alt="woman" class="faq_img" data-aos="fade-left" />
+        <p class="faq_title">FAQs</p>
+        <img src="images/faq/Group.png" alt="woman" class="faq_img" />
         <div class="faq-item" id="faq1">
           <div class="question-wrapper" id="faq-click" onclick="toggleAnswer('faq1')">
             <h3 class="question">1. What Is Aspire Elite?</h3>
@@ -568,7 +585,9 @@
 
     <section class="reviews" id="reviews">
       <div class="container">
-        <h2 class="section_title section_title_reviews">What Our Patients Are Saying</h2>
+        <h2 class="section_title section_title_reviews" data-aos="fade-up">
+          What Our Patients Are Saying
+        </h2>
         <div class="reviews_items_wrapper">
           <div class="swiper reviews-swiper">
             <div class="swiper-wrapper">
@@ -714,5 +733,8 @@
     <script src="js/script.js"></script>
     <script src="js/process.js"></script>
     <script src="js/reviews.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
