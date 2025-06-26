@@ -208,3 +208,46 @@
     margin-bottom: 22px;
   }
 }
+
+/* Sound Icon Styles */
+.sound-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.sound-icon:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}
+
+.sound-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Mobile responsive adjustments for sound icon */
+@media (max-width: 768px) {
+  .sound-icon {
+    top: 30px;
+    right: 30px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .sound-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+}
