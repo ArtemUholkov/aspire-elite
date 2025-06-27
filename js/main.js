@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
   const video = document.querySelector('.phone-video');
   const soundIcon = document.querySelector('.sound-icon');
+  const playBtns = document.querySelectorAll('.founder_play-btn');
+  const modal = document.getElementById('founder-video-modal');
+  const closeBtn = document.querySelector('.founder-video-modal-close');
+  const backdrop = document.querySelector('.founder-video-modal-backdrop');
+  const modalVideo = document.getElementById('founder-video');
+
   if (!video) return;
 
   // Function to update sound icon
@@ -41,4 +47,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Initialize sound icon
   updateSoundIcon();
+
+  function openModal() {
+    modal.classList.add('show');
+    modalVideo.currentTime = 0;
+    modalVideo.play();
+  }
+
+  function closeModal() {
+    modal.classList.remove('show');
+    modalVideo.pause();
+    modalVideo.currentTime = 0;
+  }
+
+  playBtns.forEach((btn) => btn.addEventListener('click', openModal));
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (backdrop) backdrop.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+      closeModal();
+    }
+  });
 });

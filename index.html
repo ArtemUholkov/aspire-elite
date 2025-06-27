@@ -185,19 +185,31 @@
     <section class="founder">
       <div class="container">
         <div class="founder_wrapper">
-          <img
-            src="images/founder/2chris.webp"
-            alt="Chris Van Smith"
-            class="founder_photo"
-            data-aos="fade-right"
-          />
-          <div class="founder_info" data-aos="fade-left">
-            <h2 class="section_title">Meet Founder here</h2>
+          <div
+            class="img_wrap"
+            style="max-width: 520px; width: 100%; height: auto; flex-shrink: 0; position: relative"
+          >
             <img
               src="images/founder/2chris.webp"
               alt="Chris Van Smith"
-              class="founder_photo founder_mob_photo"
+              class="founder_photo"
+              data-aos="fade-right"
             />
+            <div class="founder_play-btn"></div>
+          </div>
+          <div class="founder_info" data-aos="fade-left">
+            <h2 class="section_title">Meet Founder here</h2>
+            <div
+              class="img_wrap-mob"
+              style="max-width: 520px; width: 100%; height: auto; flex-shrink: 0"
+            >
+              <img
+                src="images/founder/2chris.webp"
+                alt="Chris Van Smith"
+                class="founder_photo founder_mob_photo"
+              />
+              <div class="founder_play-btn"></div>
+            </div>
 
             <p class="founder_text">
               Dr. Chris Van Smith is a board-certified physician with over 20 years of experience in
@@ -781,6 +793,17 @@
         </div>
       </div>
     </footer>
+
+    <div id="founder-video-modal" class="founder-video-modal">
+      <div class="founder-video-modal-backdrop"></div>
+      <div class="founder-video-modal-content">
+        <span class="founder-video-modal-close">&times;</span>
+        <video id="founder-video" controls>
+          <source src="images/main/FullSizeRender.MP4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
 
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
